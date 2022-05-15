@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/coordinator_layout_toolbar"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <!---The AppBarLayout Holds the Toolbar and TabLayout-->
     <com.google.android.material.appbar.AppBarLayout
@@ -12,7 +12,10 @@
         android:background="@color/design_default_color_on_primary"
         android:elevation="4dp"
         android:theme="@style/TopBarStyle"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_toolbar_view"
             android:layout_width="match_parent"

@@ -43,4 +43,11 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="moviecover">MovieCover</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="year_released">Year Released</string>
+    <string name="Add">Push to Library</string>
+    <string name="floating_button">fab</string>
+    <string name="Latest">2022 Movie</string>
+    <string name="Delete">Delete</string>
 </resources>

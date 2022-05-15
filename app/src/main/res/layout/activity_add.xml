@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addMovieLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+<include
+    android:id="@+id/toolbar_view"
+    layout="@layout/toolbar_view_custom_layout"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/TitleAddEdiTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/movie_title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageButtonAddMovie_view"
+        android:autofillHints="Moon Knight" />
+
+    <EditText
+        android:id="@+id/addYearEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/year_released"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleAddEdiTxt"
+        android:autofillHints="2022" />
+
+    <Button
+        android:id="@+id/AddMovieButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="addMovieClicked"
+        android:text="@string/Add"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/backgroundLight"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addYearEditText" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonAddMovie_view"
+        style="@android:style/Widget.Material.ButtonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="searchClickedMovie"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/moviecover" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
