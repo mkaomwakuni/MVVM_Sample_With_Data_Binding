@@ -7,9 +7,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.mkao.mvvmsamplewithdatabinding.R
 import com.mkao.mvvmsamplewithdatabinding.ViewModel.AddViewModel
 import com.mkao.mvvmsamplewithdatabinding.data.model.Movie
+import java.util.List.of
 
 class AddActivity : BaseActivity() {
-    private lateinit var Toolbar by lazy { toolbar_toolbar_view as Toolbar }
+    private lateinit var Toolbar by lazy { toolbar_toolbar_view as Toolbar}
 
     private lateinit var viewModel: AddViewModel
 

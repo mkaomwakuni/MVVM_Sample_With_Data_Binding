@@ -20,9 +20,6 @@ class MovieListAdapter(private val moviesList: MutableList<Movie>):RecyclerView.
             .inflate(R.layout.item_movie_main,parent,false)
         return MovieHolder(view)
     }
-
-
-
     fun setMovies (moviesList: MutableList<Movie>){
         this.movies.clear()
         this.movies.addALL(moviesList)
