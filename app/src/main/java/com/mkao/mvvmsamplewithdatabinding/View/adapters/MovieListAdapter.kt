@@ -25,8 +25,6 @@ class MovieListAdapter(private val moviesList: MutableList<Movie>):RecyclerView.
         this.movies.addALL(moviesList)
         notifyDataSetChanged()
     }
-
-
     override fun onBindViewHolder(holder: MovieHolder, position: Int) {
         holder.bind(movies[position])
     }
